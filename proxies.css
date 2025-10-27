@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.proxies-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Search */
+.search-bar {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid #38bdf8;
+  font-size: 16px;
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+/* Header row */
+.table-headings {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fbbf24;
+  text-shadow: 0 0 5px #0c0c0c, 0 0 10px #1a1917;
+}
+
+.table-headings div {
+  flex: 1;
+  text-align: center;
+}
+
+/* Proxies grid */
+.proxies-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Each proxy card (row) */
+.proxy-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 12px 20px;
+  border-radius: 16px;
+  border: 2px solid rgba(0, 170, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(0,170,255,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proxy-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,170,255,0.5);
+}
+
+.proxy-card div {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Buy button */
+.buy-btn {
+  background-color: #22c55e;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 0 5px #22c55e;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #16a34a;
+}
+
+/* ======= RESPONSIVE SECTION ======= */
+@media (max-width: 850px) {
+  .table-headings {
+    display: none; /* Hide header on small screens */
+  }
+
+  .proxy-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+    padding: 16px;
+  }
+
+  .proxy-card div {
+    flex: unset;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .proxy-card div::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #38bdf8;
+    margin-right: 8px;
+  }
+
+  .buy-btn {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+  }
+}

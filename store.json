@@ -1,0 +1,20 @@
+[
+  {"name": "eBay Accounts", "type": "Shopping", "amount": "Active", "price": 120, "category": "Shopping"},
+  {"name": "Amazon Accounts", "type": "Shopping", "amount": "Active", "price": 150, "category": "Shopping"},
+  {"name": "Walmart Accounts", "type": "Shopping", "amount": "In Stock", "price": 100, "category": "Shopping"},
+  {"name": "Coinbase Accounts", "type": "Crypto", "amount": "Verified", "price": 300, "category": "Crypto"},
+  {"name": "MetaMask Accounts", "type": "Crypto", "amount": "Verified", "price": 180, "category": "Crypto"},
+  {"name": "Trust Wallet Accounts", "type": "Crypto", "amount": "Verified", "price": 250, "category": "Crypto"},
+  {"name": "Binance Accounts", "type": "Crypto", "amount": "Verified", "price": 350, "category": "Crypto"},
+  {"name": "Kraken Accounts", "type": "Crypto", "amount": "Verified", "price": 200, "category": "Crypto"},
+  {"name": "Gemini Accounts", "type": "Crypto", "amount": "Verified", "price": 160, "category": "Crypto"},
+  {"name": "Wells Fargo Bank", "type": "Bank", "amount": "Verified", "price": 250, "category": "Banks"},
+  {"name": "Capital One Bank", "type": "Bank", "amount": "Verified", "price": 300, "category": "Banks"},
+  {"name": "BMO Bank", "type": "Bank", "amount": "Verified", "price": 180, "category": "Banks"},
+  {"name": "Citi Bank", "type": "Bank", "amount": "Verified", "price": 400, "category": "Banks"},
+  {"name": "SoFi Bank", "type": "Bank", "amount": "Verified", "price": 230, "category": "Banks"},
+  {"name": "TD Bank", "type": "Bank", "amount": "Verified", "price": 210, "category": "Banks"},
+  {"name": "Chime Bank", "type": "Wallet", "amount": "Verified", "price": 200, "category": "Wallets"},
+  {"name": "ID Verified PayPal", "type": "Wallet", "amount": "Verified", "price": 250, "category": "Verified"},
+  {"name": "ID Verified Venmo", "type": "Wallet", "amount": "Verified", "price": 220, "category": "Verified"}
+]

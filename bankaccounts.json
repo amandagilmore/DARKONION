@@ -1,0 +1,20 @@
+
+  [
+  {"name":"Bank of America","type":"Checking","amount":"$28,000","price":220},
+  {"name":"Chase Bank","type":"Savings","amount":"$54,000","price":380},
+  {"name":"Wells Fargo","type":"Checking","amount":"$22,000","price":220},
+  {"name":"Citibank","type":"Savings","amount":"$60,000","price":500},
+  {"name":"HSBC","type":"Checking","amount":"$35,000","price":250},
+  {"name":"Capital One","type":"Savings","amount":"$41,000","price":310},
+  {"name":"PNC Bank","type":"Checking","amount":"$24,000","price":140},
+  {"name":"TD Bank","type":"Savings","amount":"$57,000","price":395},
+  {"name":"US Bank","type":"Checking","amount":"$31,000","price":310},
+  {"name":"Santander","type":"Savings","amount":"$46,000","price":360},
+  {"name":"HSBC","type":"Checking","amount":"$35,000","price":250},
+  {"name":"Capital One","type":"Savings","amount":"$41,000","price":310},
+  {"name":"PNC Bank","type":"Checking","amount":"$24,000","price":140},
+  {"name":"TD Bank","type":"Savings","amount":"$57,000","price":395},
+  {"name":"US Bank","type":"Checking","amount":"$31,000","price":310},
+  {"name":"Santander","type":"Savings","amount":"$50,000","price":360}
+]
+

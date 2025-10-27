@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.bots-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Header row */
+.table-headings {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #facc15; /* bright yellow */
+  text-shadow: 0 0 5px #0c0c0c, 0 0 10px #1a1917;
+}
+
+.table-headings div {
+  flex: 1;
+  text-align: center;
+}
+
+/* Bots grid */
+.bots-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Each bot row */
+.bot-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 15px 25px;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 170, 255, 0.4);
+  box-shadow: 0 5px 15px rgba(0,170,255,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bot-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,170,255,0.5);
+}
+
+.bot-card div {
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bot-card .col-name { flex: 1; }
+.bot-card .col-desc { flex: 2; }
+.bot-card .col-price { flex: 1; text-align: center; }
+.bot-card .col-install { flex: 1; text-align: center; }
+
+/* Install Button */
+.install-btn {
+  background-color: #22c55e;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 0 8px #22c55e, 0 0 16px #22c55e, 0 0 24px #22c55e;
+  animation: fastGlow 0.7s infinite alternate;
+  transition: all 0.2s ease;
+}
+
+.install-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #16a34a, 0 0 40px #16a34a, 0 0 60px #16a34a;
+}
+
+@keyframes fastGlow {
+  0% {
+    box-shadow: 0 0 5px #22c55e, 0 0 10px #22c55e, 0 0 15px #22c55e;
+  }
+  50% {
+    box-shadow: 0 0 12px #22c55e, 0 0 24px #22c55e, 0 0 36px #22c55e;
+  }
+  100% {
+    box-shadow: 0 0 8px #22c55e, 0 0 16px #22c55e, 0 0 24px #22c55e;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-headings, .bot-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .table-headings div, .bot-card div {
+    text-align: left;
+  }
+
+  .bot-card .col-price, .bot-card .col-install {
+    text-align: left;
+  }
+}

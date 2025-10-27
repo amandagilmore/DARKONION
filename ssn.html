@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSNs - Teknova</title>
+  <link rel="stylesheet" href="ssn.css" />
+</head>
+<body>
+  <div class="ssn-container">
+    <h2>🧾 Available SSNs</h2>
+
+    <!-- Search and Filter -->
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="🔍 Search by SSN BIN..." />
+      <select id="genderFilter">
+        <option value="">All Genders</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+
+    <!-- Header Row -->
+    <div class="table-headings">
+      <div>SSN BIN</div>
+      <div>SSN Type</div>
+      <div>Details</div>
+      <div>Gender</div>
+      <div>Price ($)</div>
+      <div>Buy</div>
+    </div>
+
+    <!-- SSN Grid -->
+    <div class="ssn-grid" id="ssnGrid"></div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <!-- Modal -->
+  <div class="glass-modal" id="modal">
+    <div class="glass-box">
+      <h3>💰 Insufficient Balance</h3>
+      <p id="modalText">You need to top up to buy this SSN.</p>
+      <button id="topupBtn">Top Up Now</button>
+    </div>
+  </div>
+
+  <script src="ssn.js"></script>
+</body>
+</html>

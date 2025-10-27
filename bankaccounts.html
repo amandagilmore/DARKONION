@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Accounts - Teknova</title>
+  <link rel="stylesheet" href="bankaccounts.css" />
+</head>
+<body>
+  <div class="cards-container">
+    <h2>🏦 Available Bank Accounts</h2>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔍 Search by Bank Name..." />
+    </div>
+
+    <!-- Header Row -->
+    <div class="table-headings">
+      <div>Bank Name</div>
+      <div>Account Type</div>
+      <div>Amount Inside Account</div>
+      <div>Price ($)</div>
+      <div>Buy</div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid" id="cardsGrid"></div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <script src="bankaccounts.js"></script>
+</body>
+</html>

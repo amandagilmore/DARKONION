@@ -1,0 +1,17 @@
+[
+  { "id": "PPG-001", "title": "Quick Start: PayPal Account Security (Beginner)", "format": "eBook (PDF)", "price": 9.99 },
+  { "id": "PPG-002", "title": "2-Hour Video: Two-Factor Auth & Best Practices", "format": "Video", "price": 14.99 },
+  { "id": "PPG-003", "title": "Detecting Phishing Attempts - Mini Guide", "format": "eBook (PDF)", "price": 4.99 },
+  { "id": "PPG-004", "title": "Advanced: Recovery & Compromise Response", "format": "eBook + Checklist", "price": 19.99 },
+  { "id": "PPG-005", "title": "Family & Business PayPal Security Policies", "format": "Template Bundle", "price": 12.5 },
+  { "id": "PPG-006", "title": "Monthly Security Newsletter Subscription (1 month)", "format": "Subscription", "price": 2.99 },
+  { "id": "PPG-007", "title": "Complete Course: Secure Payments for Freelancers", "format": "Course", "price": 29.99 },
+  { "id": "PPG-008", "title": "Quick Audit Checklist for PayPal Accounts", "format": "Checklist PDF", "price": 3.5 },
+  { "id": "PPG-009", "title": "Using Password Managers Safely", "format": "eGuide", "price": 6.99 },
+  { "id": "PPG-010", "title": "Security Toolkit (scripts & templates for alerts)", "format": "Toolkit", "price": 24.99 },
+  { "id": "PPG-011", "title": "Beginner's Guide: Recognize Scams", "format": "eBook (PDF)", "price": 5.99 },
+  { "id": "PPG-012", "title": "Small Business: PayPal Best Setup", "format": "Guide", "price": 17.49 },
+  { "id": "PPG-013", "title": "Family Safety Pack: Parental Settings", "format": "Bundle", "price": 8.99 },
+  { "id": "PPG-014", "title": "Incident Response Template for Managers", "format": "Template", "price": 9.99 },
+  { "id": "PPG-015", "title": "Quick Tips: Secure Mobile PayPal", "format": "Checklist", "price": 2.49 }
+]

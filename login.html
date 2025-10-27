@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Onion</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="login-container">
+    
+    <h1 class="logo">
+  <img src="logo.png" alt="Logo" class="logo-img" />
+  Dark Onion
+</h1>
+
+    <div class="login-card">
+      <h2 id="form-title">Login</h2>
+
+      <form id="authForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+
+        <div class="remember-me">
+          <input type="checkbox" id="rememberMe" />
+          <label for="rememberMe">Remember Me</label>
+        </div>
+
+        <button type="submit" id="submitBtn">Login</button>
+      </form>
+
+      <p class="toggle-text">
+        Don’t have an account?
+        <a href="#" id="toggleLink">Create one</a>
+      </p>
+    </div>
+
+    <div id="toast"></div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.refund-container {
+  background: rgba(30, 41, 59, 0.85);
+  border: 2px solid rgba(56, 189, 248, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  padding: 30px;
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.balance-box {
+  background-color: #1e293b;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #22c55e;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #1e293b;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+#refundBtn {
+  background-color: #38bdf8;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+  transition: 0.2s;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+#refundBtn:hover {
+  background-color: #0ea5e9;
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.message.success {
+  color: #22c55e;
+}
+
+.message.error {
+  color: #ef4444;
+}
+
+.refund-history {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.refund-history h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.history-list {
+  background-color: #1e293b;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.history-item {
+  background-color: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.history-item p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.no-history {
+  color: #94a3b8;
+  text-align: center;
+  padding: 15px 0;
+}

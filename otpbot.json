@@ -1,0 +1,9 @@
+[
+  { "name":"OTP Bot", "description":"Automates OTP retrieval", "price":50 },
+  { "name":"Address Bot", "description":"Generates and validates addresses", "price":40 },
+  { "name":"SSN Bot", "description":"Generates Social Security Numbers", "price":60 },
+  { "name":"Credit Card Bot", "description":"Provides card numbers for testing", "price":70 },
+  { "name":"Email Bot", "description":"Automates email creation and management", "price":35 },
+  { "name":"Proxy Scraper Bot", "description":"Scrapes working proxies automatically", "price":45 },
+  { "name":"Instagram Bot", "description":"Automates Instagram actions", "price":80 }
+]

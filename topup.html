@@ -1,0 +1,61 @@
+<!-- topup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teknova - Top Up</title>
+  <link rel="stylesheet" href="topup.css" />
+</head>
+<body>
+  <!-- Header / Top Bar -->
+  <div class="top-bar">
+    <a href="index.html" class="logo">Teknova</a>
+    <div class="right-section">
+      <button class="nav-btn" id="topupBtn">Top Up Balance</button>
+      <button class="nav-btn" id="refundBtn">Refund</button>
+      <span id="balanceDisplay" class="balance-text">$0.00</span>
+      <span id="usernameDisplay" class="username-text">Guest</span>
+      <button class="nav-btn" id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <!-- Top Up Section -->
+  <div class="topup-container">
+    <h2>Top Up Your Account</h2>
+    <p>Select a crypto wallet, copy the address, then enter your TXID and amount (minimum $50).</p>
+
+    <!-- Crypto Buttons -->
+    <div class="crypto-buttons">
+      <button id="btc-btn" class="active">₿ BTC</button>
+      <button id="usdt-btn">💵 USDT</button>
+      <button id="ltc-btn">💰 LTC</button>
+    </div>
+
+    <!-- Wallet Display -->
+    <div id="wallet-display" class="wallet-display">
+      <h3 id="wallet-title">BTC Wallet</h3>
+      <p>Send your payment to the following wallet address:</p>
+      <div class="wallet-address-container">
+        <span id="wallet-address" class="wallet-address">bc1qexamplebtcwalletaddress1234567890</span>
+        <button class="copy-btn" id="copy-btn">Copy</button>
+      </div>
+      <p id="copy-success" class="copy-success" style="display:none;">Copied to clipboard ✅</p>
+    </div>
+
+    <!-- Deposit Form (with TXID field) -->
+    <div class="deposit-section">
+      <label for="txidInput">Transaction ID (TXID)*</label>
+      <input type="text" id="txidInput" placeholder="Paste your TXID" />
+
+      <label for="depositAmount">Amount in USD (min $50)*</label>
+      <input type="number" id="depositAmount" min="50" placeholder="50" />
+
+      <button id="verifyBtn" class="nav-btn">Verify & Add Funds</button>
+      <p id="verifyMessage" class="copy-success" style="display:none;"></p>
+    </div>
+  </div>
+
+  <script src="topup.js"></script>
+</body>
+</html>

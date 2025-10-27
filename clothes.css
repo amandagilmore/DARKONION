@@ -1,0 +1,136 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Container */
+.clothes-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* Header row (desktop) */
+.table-headings {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 1fr;
+  align-items: center;
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #facc15;
+  text-shadow: 0 0 4px #0c0c0c, 0 0 8px #1a1917;
+  text-align: center;
+}
+
+/* Clothes grid */
+.clothes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Each clothes card (desktop) */
+.clothes-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 1fr;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 14px 20px;
+  border-radius: 15px;
+  border: 1.5px solid rgba(0, 170, 255, 0.3);
+  box-shadow: 0 5px 12px rgba(0, 170, 255, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.clothes-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 170, 255, 0.35);
+}
+
+.clothes-card div {
+  text-align: center;
+  padding: 5px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ✅ Softer green Buy button */
+.buy-btn {
+  background-color: #22c55e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 0 4px rgba(34, 197, 94, 0.4);
+  transition: all 0.25s ease-in-out;
+  animation: softGlow 1.8s infinite alternate;
+}
+
+@keyframes softGlow {
+  0% {
+    box-shadow: 0 0 3px rgba(34, 197, 94, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 6px rgba(34, 197, 94, 0.5);
+  }
+}
+
+.buy-btn:hover {
+  background-color: #16a34a;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .table-headings {
+    display: none; /* Hide desktop headers */
+  }
+
+  .clothes-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+    padding: 14px;
+  }
+
+  .clothes-card div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .clothes-card div::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #facc15;
+  }
+
+  .buy-btn {
+    align-self: flex-start;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+}

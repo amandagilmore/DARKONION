@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store - Teknova</title>
+  <link rel="stylesheet" href="store.css" />
+</head>
+<body>
+  <div class="cards-container">
+    <h2>🛍️ Teknova Store</h2>
+
+    <!-- Category Filters -->
+    <div class="category-bar">
+      <button class="category-btn active" data-category="All">All</button>
+      <button class="category-btn" data-category="Shopping">Shopping</button>
+      <button class="category-btn" data-category="Banks">Banks</button>
+      <button class="category-btn" data-category="Crypto">Crypto</button>
+      <button class="category-btn" data-category="Wallets">Wallets</button>
+      <button class="category-btn" data-category="Verified">Verified</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔍 Search by Account Name..." />
+    </div>
+
+    <!-- Header Row -->
+    <div class="table-headings">
+      <div>Account Name</div>
+      <div>Type</div>
+      <div>Status / Balance</div>
+      <div>Price ($)</div>
+      <div>Buy</div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid" id="cardsGrid"></div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <script src="store.js"></script>
+</body>
+</html>

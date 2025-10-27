@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.bank-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table Headings */
+.table-headings {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #1e293b;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #facc15;
+  text-shadow: 0 0 5px #000000;
+}
+
+.table-headings div {
+  flex: 1;
+  text-align: center;
+}
+
+/* Bank Rows */
+.bank-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bank-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 15px 25px;
+  border-radius: 16px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+  transition: all 0.3s ease;
+}
+
+.bank-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.35);
+}
+
+.bank-row div {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+/* Buy Button */
+.buy-btn {
+  background-color: #22c55e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 0 6px #16a34a;
+  transition: all 0.2s ease;
+}
+
+.buy-btn:hover {
+  background-color: #16a34a;
+  box-shadow: 0 0 10px #16a34a;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .table-headings {
+    display: none; /* Hide table headings on small screens */
+  }
+
+  .bank-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .bank-row div {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .bank-row div::before {
+    font-weight: 600;
+    color: #facc15;
+    display: inline-block;
+    width: 180px;
+  }
+
+  .col-bank::before { content: "Bank Name: "; }
+  .col-type::before { content: "Account Type: "; }
+  .col-amount::before { content: "Amount Inside Account: "; }
+  .col-price::before { content: "Price: "; }
+
+  /* Remove "Action:" label */
+  .col-buy::before { content: ""; }
+
+  .col-buy {
+    text-align: left;
+  }
+
+  .buy-btn {
+    margin-top: 5px;
+  }
+}
