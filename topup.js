@@ -74,5 +74,5 @@ window.addEventListener('load',()=>{
   const top=_$("topupBtn"), ref=_$("refundBtn"), out=_$("logoutBtn");
   if(top) top.addEventListener('click',()=>location.href='topup.html');
   if(ref) ref.addEventListener('click',()=>location.href='refund.html');
-  if(out) out.addEventListener('click',()=>{ localStorage.removeItem('username'); localStorage.removeItem('balance'); alert('You have been logged out!'); location.href='login.html'; });
+  if(out) out.addEventListener('click',()=>{ localStorage.removeItem('username'); localStorage.removeItem('balance'); alert('You have been logged out!'); location.href='index.html'; });
 });

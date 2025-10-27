@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Onion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="left-section">
+      <a href="#" class="logo">Dark Onion</a>
+    </div>
+    <div class="center-section desktop-only">
+      <button class="nav-btn">Become Seller</button>
+    </div>
+    <div class="right-section desktop-only">
+      <div class="account-info">
+        <button class="nav-btn" id="historyBtn" onclick="window.location.href='purchases.html'">Purchase History</button>
+        <button class="nav-btn" id="refundBtn">Refund</button>
+        <button class="nav-btn" id="topupBtn">Top Up Balance</button>
+        <span id="balanceDisplay" class="balance-text">$0.00</span>
+        <span id="usernameDisplay" class="username-text">Guest</span>
+        <button class="nav-btn" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+    <div class="mobile-hamburger">
+      <span id="hamburgerBtn">&#9776;</span>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="nav-btn">Become Seller</button>
+      <button class="nav-btn" id="historyBtnMobile" onclick="window.location.href='purchases.html'">Purchase History</button>
+      <button class="nav-btn" id="refundBtnMobile">Refund</button>
+      <button class="nav-btn" id="topupBtnMobile">Top Up Balance</button>
+      <span id="balanceDisplayMobile" class="balance-text">$0.00</span>
+      <span id="usernameDisplayMobile" class="username-text">Guest</span>
+      <button class="nav-btn" id="logoutBtnMobile">Logout</button>
+    </div>
+  </div>
+
+  <div class="menu">
+    <button onclick="window.location.href='cards.html'">💳 Card</button>
+    <button onclick="window.location.href='ssn.html'">🧾🔢SSN</button>
+    <button onclick="window.location.href='malwares.html'">Malwares</button>
+    <button onclick="window.location.href='paypal.html'">🅿️💸Paypal,<br>Zelle logs</button>
+    <button onclick="window.location.href='proxies.html'">🌐 Proxy</button>
+    <button onclick="window.location.href='store.html'">Accounts<br>(zelle,paypal,<br>sofi,<br>walmart.etc) </button>
+    <button onclick="window.location.href='otpbot.html'">🤖 Bots</button>
+    <button onclick="window.location.href='bankaccounts.html'">🏦 Bank Logs</button>
+  </div>
+
+  <h2 class="topup-title">Top Up</h2>
+
+  <div class="crypto-buttons">
+    <button id="btc-btn">₿ BTC</button>
+    <button id="usdt-btn">💵 USDT</button>
+    <button id="ltc-btn">💰 LTC</button>
+  </div>
+
+  <div id="wallet-display" class="wallet-display">
+    <h3 id="wallet-title">BTC Wallet</h3>
+    <p>Please deposit your wallet using the address below first. After the transaction, enter your TXID and amount below:</p>
+    <div class="wallet-address-container">
+      <span id="wallet-address" class="wallet-address">bc1qexamplebtcwalletaddress1234567890</span>
+      <button class="copy-btn" id="copy-btn">Copy</button>
+    </div>
+    <p id="copy-success" class="copy-success" style="display: none;">Copied to clipboard ✅ Pay then Scroll down to verify your Payment</p>  
+  </div>
+
+  <div class="deposit-section">
+    <label for="txidInput">Enter TXID:</label>
+    <input type="text" id="txidInput" placeholder="Transaction ID" />
+    <label for="depositAmount">Enter Amount:</label>
+    <input type="number" id="depositAmount" min="0.01" placeholder="0.00" />
+    <button id="verifyBtn" class="nav-btn">Verify Deposit</button>
+    <p id="verifyMessage" class="copy-success" style="display:none;"></p>
+    
+  </div>
+</div>
+
+  </div>
+
+  <script src="index.js"></script>
+
+<!-- Telegram Floating Button (Demo/Education) -->
+<a
+  href="https://t.me/YourTelegramUsername"
+  class="tg-fab"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Message me on Telegram (opens in new tab)"
+  title="Message me on Telegram"
+>
+  <!-- Inline SVG (Telegram logo) -->
+  <svg viewBox="0 0 240 240" class="tg-icon" aria-hidden="true">
+    <circle cx="120" cy="120" r="120" fill="#229ED9"></circle>
+    <path d="M179 74L52 124c-6 2-6 9 1 11l32 10 12 37c2 6 8 6 11 1l17-22 33 24c4 3 9 2 10-3l18-95c1-6-3-10-7-8zM100 161l-7-22 62-55-48 63-7 14z" fill="#fff"></path>
+  </svg>
+  <span class="tg-label">Contact support Via telegram 
+</span>
+</a>
+
+
+
+
+</body>
+</html>

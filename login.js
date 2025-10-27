@@ -25,7 +25,7 @@ toggleLink.addEventListener("click", (e) => {
 document.addEventListener("DOMContentLoaded", () => {
   const rememberedUser = localStorage.getItem("rememberedUser");
   if (rememberedUser) {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   }
 });
 
@@ -59,7 +59,7 @@ form.addEventListener("submit", (e) => {
         }
 
         setTimeout(() => {
-          window.location.href = "index.html";
+          window.location.href = "home.html";
         }, 1000);
       } else {
         showToast("Incorrect password!");
@@ -82,7 +82,7 @@ form.addEventListener("submit", (e) => {
 
         showToast("Account created and logged in!");
         setTimeout(() => {
-          window.location.href = "index.html";
+          window.location.href = "home.html";
         }, 1000);
       }
     }
