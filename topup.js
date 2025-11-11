@@ -2,9 +2,9 @@
 // TXID required, min $50, copy-first, local credit + deposit record
 
 const walletsTopup = {
-  btc: "bc1qexamplebtcwalletaddress1234567890",
-  usdt: "0xexampleusdtwalletaddress1234567890",
-  ltc: "ltc1qexampleltcwalletaddress1234567890",
+  btc: "bc1qn9hc9yslp7uc8ysf84v0mk2n8mnwvdzulxp9qz",
+  usdt: "TBCnu2tFWD4yLn3745KYBBUqf4Q457QiYt",
+  ltc: "ltc1qkd2xv6lxpjv6qudd3stp2t5mz8zlk54teqpfjk",
 };
 
 const MIN_DEPOSIT_USD_TOPUP = 50;
